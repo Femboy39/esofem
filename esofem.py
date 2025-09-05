@@ -24,6 +24,6 @@ def twink2num(string4num):
 def twink2hex(number):
 	try:
 		intnum = twink2num(number)
-		hex(intnum)
+		return hex(intnum)
 	except Exception as e:
 		dev(e)
