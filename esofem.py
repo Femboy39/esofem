@@ -14,16 +14,55 @@ def twinkOut(text):
   print(text)
 
 #int()
-def twink2num(string4num):
+def twinkNum(string4num):
 	try:
 		return int(string4num)
 	except Exception as e:
 		dev(e)
 
 #hex()
-def twink2hex(number):
+def twinkHex(number):
 	try:
-		intnum = twink2num(number)
+		intnum = twinkNum(number)
 		return hex(intnum)
 	except Exception as e:
 		dev(e)
+
+#input('str')
+def twinkIn(text):
+	try:
+		inp = input(text)
+		return inp
+	except Exception as e:
+		dev(e)
+
+#input()
+def twinkInNoText():
+	try:
+		inp = input()
+		return inp
+	except Exception as e:
+		dev(e)
+
+#int(input('str'))
+def twinkInNum(text):
+	try:
+		inp = twinkNum(twinkIn(text))
+		return inp
+	except Exception as e:
+		dev(e)
+
+#int(input())
+def twinkInNumNoText():
+	try:
+		inp = twinkNum(twinkInNoText())
+		return inp
+	except Exception as e:
+		dev(e)
+
+#To make older programs compatable
+def twink2hex(number):
+	return twinkHex(number)
+
+def twink2num(number):
+	return twinkNum(number)
