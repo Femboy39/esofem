@@ -53,7 +53,7 @@ def twinkInNoText():
 #int(input('str'))
 def twinkInNum(text):
 	try:
-		inp = twinkNum(twinkIn(text))
+		inp = twinkIn(twinkNum(text))
 		return inp
 	except Exception as e:
 		dev(e)
@@ -61,7 +61,7 @@ def twinkInNum(text):
 #int(input())
 def twinkInNumNoText():
 	try:
-		inp = twinkNum(twinkInNoText())
+		inp = twinkInNoText(twinkNum())
 		return inp
 	except Exception as e:
 		dev(e)
