@@ -1,5 +1,11 @@
 #esofem.py
 
+#Set dev variable
+developer_mode = None
+def setDev(status):
+  global developer_mode
+  developer_mode = status
+
 #Check dev funct
 def dev(e):
 	try:
