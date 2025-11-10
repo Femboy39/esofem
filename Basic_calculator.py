@@ -8,4 +8,4 @@ numberOne = twinkInNum("Number 1> ")
 numberTwo = twinkInNum("Number 2> ")
 
 twinkOut(numberOne + numberTwo)
-twinkIn()
+twinkIn(None)
