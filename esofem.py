@@ -47,7 +47,7 @@ def twinkIn(prompt):
 #int(input())
 def twinkInNum(prompt):
 	try:
-		return twinkIn(twinkNum(prompt))
+		return twinkNum(twinkIn(prompt))
 	except Exception as e:
 		dev(e)
 
