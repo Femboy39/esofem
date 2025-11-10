@@ -40,7 +40,10 @@ def twinkHex(number):
 #input()
 def twinkIn(prompt):
 	try:
-		return input(prompt)
+		if prompt != None:
+			return input(prompt)
+		else:
+			return input()
 	except Exception as e:
 		dev(e)
 
