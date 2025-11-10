@@ -29,40 +29,35 @@ def twinkNum(string4num):
 #hex()
 def twinkHex(number):
 	try:
-		intnum = twinkNum(number)
-		return hex(intnum)
+		return hex(twinkNum(number))
 	except Exception as e:
 		dev(e)
 
 #input('str')
 def twinkIn(text):
 	try:
-		inp = input(text)
-		return inp
+		return input(text)
 	except Exception as e:
 		dev(e)
 
 #input()
 def twinkInNoText():
 	try:
-		inp = input()
-		return inp
+		return input()
 	except Exception as e:
 		dev(e)
 
 #int(input('str'))
 def twinkInNum(text):
 	try:
-		inp = twinkIn(twinkNum(text))
-		return inp
+		return twinkIn(twinkNum(text))
 	except Exception as e:
 		dev(e)
 
 #int(input())
 def twinkInNumNoText():
 	try:
-		inp = twinkInNoText(twinkNum())
-		return inp
+		return twinkInNoText(twinkNum())
 	except Exception as e:
 		dev(e)
 
