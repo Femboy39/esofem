@@ -16,13 +16,17 @@ def dev(e):
 		return None
 
 #print()
-def twinkOut(text):
-  print(text)
+def twinkOut(obj):
+  print(obj)
+
+#print fstring
+def twinkOutf(obj):
+	twinkOut(obj)
 
 #int()
-def twinkNum(string4num):
+def twinkNum(obj):
 	try:
-		return int(string4num)
+		return int(obj)
 	except Exception as e:
 		dev(e)
 
@@ -33,31 +37,87 @@ def twinkHex(number):
 	except Exception as e:
 		dev(e)
 
-#input('str')
-def twinkIn(text):
-	try:
-		return input(text)
-	except Exception as e:
-		dev(e)
-
 #input()
-def twinkInNoText():
+def twinkIn(prompt):
 	try:
-		return input()
-	except Exception as e:
-		dev(e)
-
-#int(input('str'))
-def twinkInNum(text):
-	try:
-		return twinkIn(twinkNum(text))
+		return input(prompt)
 	except Exception as e:
 		dev(e)
 
 #int(input())
-def twinkInNumNoText():
+def twinkInNum(prompt):
 	try:
-		return twinkInNoText(twinkNum())
+		return twinkIn(twinkNum(prompt))
+	except Exception as e:
+		dev(e)
+
+#len()
+def twinkSize(obj):
+	try:
+		return len(obj)
+	except Exception as e:
+		dev(e)
+
+#str()
+def twinkString(obj2convert):
+	try:
+		return str(obj2convert)
+	except Exception as e:
+		dev(e)
+
+#float()
+def twinkFloat(obj2convert):
+	try:
+		return float(obj2convert)
+	except Exception as e:
+		dev(e)
+
+#type()
+def twinkType(obj):
+	try:
+		return type(obj)
+	except Exception as e:
+		dev(e)
+
+#dir()
+def twinkDir(obj):
+	try:
+		return dir(obj)
+	except Exception as e:
+		dev(e)
+
+#max()
+def twinkMost(obj):
+	try:
+		return max(obj)
+	except Exception as e:
+		dev(e)
+
+#min()
+def twinkLeast(obj):
+	try:
+		return min(obj)
+	except Exception as e:
+		dev(e)
+
+#obj.upper()
+def twinkUp(obj):
+	try:
+		return obj.upper()
+	except Exception as e:
+		dev(e)
+
+#obj.lower()
+def twinkLow(obj):
+	try:
+		return obj.lower()
+	except Exception as e:
+		dev(e)
+
+#round()
+def twinkRound(obj):
+	try:
+		return round(obj)
 	except Exception as e:
 		dev(e)
 
