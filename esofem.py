@@ -40,10 +40,7 @@ def twinkHex(number):
 #input()
 def twinkIn(prompt):
 	try:
-		if prompt != None:
-			return input(prompt)
-		else:
-			return input()
+		return input()
 	except Exception as e:
 		dev(e)
 
@@ -123,6 +120,11 @@ def twinkRound(obj):
 		return round(obj)
 	except Exception as e:
 		dev(e)
+
+#Booleans and other
+realTwink = True
+notTwink = False
+noTwink = None
 
 #To make older programs compatable
 def twink2hex(number):
