@@ -37,6 +37,13 @@ def twinkHex(number):
 	except Exception as e:
 		dev(e)
 
+#oct()
+def twinkOct(number):
+	try:
+		return oct(twinkNum(number))
+	except Exception as e:
+		dev(e)
+
 #input()
 def twinkIn(prompt):
 	try:
