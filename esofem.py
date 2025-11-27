@@ -44,6 +44,13 @@ def twinkOct(number):
 	except Exception as e:
 		dev(e)
 
+#bin()
+def twinkBin(number):
+	try:
+		return bin(twinkNum(number))
+	except Exception as e:
+		dev(e)
+
 #input()
 def twinkIn(prompt):
 	try:
