@@ -161,7 +161,7 @@ def twinkRound(obj):
 	except Exception as e:
 		dev(e)
 
-#Booleans and other
+#Booleans and None
 realTwink = True
 notTwink = False
 noTwink = None
