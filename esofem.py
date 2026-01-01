@@ -1,5 +1,31 @@
 #esofem.py
 
+"""List of syntax complete:
+print()
+int()
+hex()
+oct()
+bin()
+input()
+len()
+str()
+float()
+type()
+dir()
+max()
+min()
+round()
+True
+False
+None
+
+List of custom syntax:
+int(input))
+obj.upper()
+obj.lower()
+"""
+
+
 #Set dev variable
 developer_mode = None
 def setDev(status):
