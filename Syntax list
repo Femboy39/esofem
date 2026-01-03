@@ -13,6 +13,7 @@ dir()
 max()
 min()
 round()
+abs()
 True
 False
 None
@@ -23,4 +24,4 @@ obj.upper()
 obj.lower()
 
 Python syntax to do:
-abs()
+nothing
