@@ -15,6 +15,7 @@ dir()
 max()
 min()
 round()
+abs()
 True
 False
 None
@@ -158,6 +159,13 @@ def twinkLow(obj):
 def twinkRound(obj):
 	try:
 		return round(obj)
+	except Exception as e:
+		dev(e)
+
+#abs()
+def posTwink(obj):
+	try:
+		return abs(obj)
 	except Exception as e:
 		dev(e)
 
