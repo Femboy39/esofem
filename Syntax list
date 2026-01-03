@@ -18,7 +18,7 @@ False
 None
 
 List of custom syntax:
-int(input))
+int(input())
 obj.upper()
 obj.lower()
 
